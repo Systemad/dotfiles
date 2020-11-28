@@ -1,0 +1,5 @@
+[user]
+	email = dannesuke@gmail.com
+	name = systemad
+[core]
+	editor = nvim
