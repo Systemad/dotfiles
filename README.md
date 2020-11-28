@@ -31,16 +31,16 @@ git clone https://github.com/systemad/dotfiles ~/dotfiles
 
 `❯ pwd: /home/USER/dotfiles # Git repository`
 
-To install user dotfiles, run `./arch_setup.sh`.
-To install root dotfiles, run `sudo ./arch_setup.sh`.
+To install user dotfiles, run `./setup_dotfiles.sh`.
+To install root dotfiles, run `sudo ./setup_dotfiles.sh`.
 
 For now the scripts installs all dotfiles, however, in the future I will add option to choose which dotfiles to install.
 
 If you wish to install one or more dotfiles manually, you can do so by running `stowit ~ foldername`
 
-### Adding dotfiles 
+### Adding dotfiles
 
-In order to add your own dotfiles, you need to first create the directories inside the git repository, I will use sway as an example
+In order to add your own dotfiles, you first need to create the directories inside the git repository, I will use sway as an example
 ```
 ❯ pwd: /home/USER/dotfiles      # Git repository
 ❯ mkdir -p sway/.config/sway
@@ -52,7 +52,7 @@ Then copy over your dotfile(s) to the newly created folder inside the git reposi
 ❯ cp config /home/USER/dotfiles/sway/.config/sway
 ```
 
-Then edit `./arch_setup.sh` and add your dotfile folder under useronly(), for example
+Then edit `./setup_dotfiles.sh` and add your dotfile folder under useronly(), for example
 
 ```
 useronly=(
@@ -65,5 +65,11 @@ useronly=(
 And lastly run the installation script inside git repository directory. NOTE: You may have to remove your original dotfiles inside '$HOME/.config/' and stow will symlink them after
 ```
 ❯ pwd: /home/USER/dotfiles
+❯ ./setup_dotfiles.sh
+```
+
+### To install packages for Arch (only for now)
+```
+❯ pwd: /home/USER/dotfiles/__setup
 ❯ ./arch_setup.sh
 ```
