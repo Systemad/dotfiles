@@ -21,17 +21,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Purple theme
     Plug 'shapeoflambda/dark-purple.vim'
     Plug 'itchyny/lightline.vim'
-
+    
     " Our our intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    Plug 'dense-analysis/ale'
 
     " Syntac highlight for C/C++
-    Plug 'jackguo380/vim-lsp-cxx-highlight'
+    "Plug 'jackguo380/vim-lsp-cxx-highlight'
 
     "  Syntax checking
-    Plug 'vim-syntastic/syntastic'
+    ":Plug 'vim-syntastic/syntastic'
 
     " Clang formatting
-    Plug 'rhysd/vim-clang-format'
+    "Plug 'rhysd/vim-clang-format'
 
 call plug#end()
