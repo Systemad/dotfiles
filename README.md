@@ -15,7 +15,7 @@
 | OS                  | Manjaro (Arch)                   |
 | Desktop Environment | Gnome   (Wayland)                |
 | Window Manager      | Sway    (Wayland)                |
-| Terminal            | Alacritty                        |
+| Terminal            | Gnome Terminal                   |
 | Editor              | NeoVim & VSCode                  |
 
 ## Setting up dotfiles
